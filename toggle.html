@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      #objetivo {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: yellow;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      var x;
+      x = $(document);
+      x.ready(iniciar);
+      function iniciar() {
+        var x = $("#mostrar");
+        x.click(muestrame);
+      }
+      function muestrame() {
+        var x = $("#objetivo");
+        x.toggle("fast");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" id="mostrar" value="Mostrar-Ocultar" />
+
+    <div id="objetivo">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, amet
+      dignissimos ducimus porro blanditiis reprehenderit nisi. Pariatur, placeat
+      itaque laudantium ducimus repellendus consectetur distinctio inventore
+      quos. Excepturi similique consequuntur quam?
+    </div>
+  </body>
+</html>
